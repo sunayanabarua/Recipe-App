@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Recipe App</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="mobile-container">
+    <!-- navBar -->
+    <header id="header">
+      <nav class="navbar navbar-default">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <img id="brand-logo" src="images/logo.png" alt="Company-logo" />
+          </div>
+
+          <div class="collapse navbar-collapse navbar-default">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="nav-link">
+                <a href="#random-section">Recipe of the day</a>
+              </li>
+              <li class="nav-link">
+                <a href="#category-section">Categories</a>
+              </li>
+              <!-- <li class="nav-link">
+                <a href="#category-section"><i class="fal fa-search"></i></a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="search-btn">
+      <form class="search" action="/" method="post">
+        <input type="text" name="searchInput" placeholder="Search a recipe here..." value="">
+        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+      </form>
+    </div>
+
+    <!-- Category part -->
+    <div class="category-meals" id="category-section">
+      <h2 class="title"> Recipe Categories</h2>
+      <ul class="category-details">
+        <li>
+          <form class="cat-form" action="/category/breakfast" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="breakfast">
+              <img class="category-img" src="https://www.themealdb.com/images/category/breakfast.png">
+              <span class="cat-text">Breakfast</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/starter" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="starter">
+              <img class="category-img" src="https://www.themealdb.com/images/category/starter.png">
+              <span class="cat-text">Starter</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/vegetarian" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="vegetarian">
+              <img class="category-img" src="https://www.themealdb.com/images/category/vegetarian.png">
+              <span class="cat-text">Vegetarian</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/chicken" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="chicken">
+              <img class="category-img" src="https://www.themealdb.com/images/category/chicken.png">
+              <span class="cat-text">Chicken</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/seafood" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="seafood">
+              <img class="category-img" src="https://www.themealdb.com/images/category/seafood.png">
+              <span class="cat-text">Seafood</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/pasta" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="pasta">
+              <img class="category-img" src="https://www.themealdb.com/images/category/pasta.png">
+              <span class="cat-text">Pasta</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/lamb" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="lamb">
+              <img class="category-img" src="https://www.themealdb.com/images/category/lamb.png">
+              <span class="cat-text">Lamb</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/pork" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="pork">
+              <img class="category-img" src="https://www.themealdb.com/images/category/pork.png">
+              <span class="cat-text">Pork</span>
+            </button>
+          </form>
+        </li>
+
+        <li>
+          <form class="cat-form" action="/category/dessert" method="post">
+            <button class="btn btn-cat" type="submit" name="category" value="dessert">
+              <img class="category-img" src="https://www.themealdb.com/images/category/dessert.png">
+              <span class="cat-text">Dessert</span>
+            </button>
+          </form>
+        </li>
+      </ul>
+    </div>
+
+
+    <!-- Random Recipe -->
+    <div class="random-recipe" id="random-section">
+      <h2 class="title" id="random-title">Recipe of the Day</h2>
+      <div class="random-header">
+        <img id="random-pic" class="random-img" src=<%=randomPic%> alt="ImageRandom " />
+          <h3 class="recipe-name"><%=recipeName%></h3>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

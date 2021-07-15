@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title><%=categoryHead%></title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+  <div class="mobile-container">
+    <div class="category-details">
+      <h1 class="title" id="category-header"><%=categoryHead%></h1>
+
+      <ul id="meal-list">
+        <%for(var i=0;i<(Object.keys(mealList.meals).length);i++){%>
+        <li class="random-header">
+            <a href="<%=mealList.meals[i].idMeal%>">
+              <img id="cat-img" class="random-img" src="<%=mealList.meals[i].strMealThumb%>" alt="Imge"/>
+                      </a>
+                      <h3 id="cat-text" class="recipe-name"><%=mealList.meals[i].strMeal%></h3>
+        </li>
+        <%}%>
+    </ul>
+
+  </div>
+  </body>
+</html>

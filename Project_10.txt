@@ -1,0 +1,28 @@
+1. Countdown timer
+https://www.uidesigndaily.com/posts/sketch-countdown-timer-day-876
+- new year date - current date
+- timer
+
+2. Quiz App
+https://www.uidesigndaily.com/posts/sketch-questionnaire-choice-submit-day-924
+
+- questions in JS
+- select answer(radio button)
+- compare answers
+- show results
+
+3. Recipe App
+https://www.uidesigndaily.com/posts/sketch-recipe-app-food-mobile-day-615
+
+- Create, Read, Update delete recipes
+- Use API to get category and 5 random recipe
+-  Recipe of the day
+
+
+4. Notes App
+5. Drawing App
+6. ToDo App
+7. Movie App
+8. GitHub Profiles
+9. Password Generator
+10. Weather App
